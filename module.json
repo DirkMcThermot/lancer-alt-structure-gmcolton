@@ -1,7 +1,7 @@
 {
-  "id": "lancer-alt-structure",
-  "title": "LANCER Alternative Structure",
-  "description": "Implements alternative structure rulesets for Lancer",
+  "id": "lancer-alt-structure-gmcolton",
+  "title": "Lancer Alternative Structure - GM Colton",
+  "description": "Implements an alternative structure rulesets for Lancer used by GM Colton",
   "version": "#{VERSION}#",
   "library": "false",
   "manifestPlusVersion": "1.2.0",
@@ -11,9 +11,9 @@
   },
   "authors": [
     {
-      "name": "BadIdeasBureau",
-      "url": "https://github.com/BadIdeasBureau",
-      "discord": "badideasbureau"
+      "name": "DirkMcThermot",
+      "url": "https://github.com/DirkMcThermot",
+      "discord": "dirkmcthermot"
     }
   ],
   "relationships": {
