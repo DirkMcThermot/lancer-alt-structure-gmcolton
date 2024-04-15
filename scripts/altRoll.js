@@ -98,7 +98,7 @@ export async function altRoll(reroll_data, type, tables, wrappedThis) {
 
         let hasCheck = (
             (isStructure && (
-                (hitType == "crushingHit") || (hitType == "directHit" && remaining <= 2)
+                (hitType == "directHit" && remaining == 2)
             ))
             ||
             (!isStructure && 
@@ -116,7 +116,7 @@ export async function altRoll(reroll_data, type, tables, wrappedThis) {
             secondaryRoll = secondaryRoll + `<button class="chat-button chat-macro-button" data-macro="${macroData}"><i class="fas fa-dice-d20"></i> ${checkType} </button>`;
         }
 
-        let traumaRoll = isStructure && ((hitType == "systemTrauma") || (hitType == "directHit" && remaining <= 2)); //and similar for system trauma roll (will pop trauma roll button regardless of check result for remstruct = 2, TODO: work around wrappedThis
+        let traumaRoll = isStructure && ((hitType == "systemTrauma") || (hitType == "directHit" && remaining <= 2) || (hitType == "crushingHit")); //and similar for system trauma roll (will pop trauma roll button regardless of check result for remstruct = 2, TODO: work around wrappedThis
 
         if (traumaRoll) {
             let macroData = encodeMacroData({
