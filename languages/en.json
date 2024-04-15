@@ -1,15 +1,15 @@
 {
     "LANCER-ALT-STRUCTURE": {
         "StructureDescriptions": {
-            "noStructure": "Your mech is damaged beyond repair – it is destroyed. You may still exit it as normal.",
-            "crushingHit": "Roll a <strong>HULL</strong> check. On a success, until the end of your next turn, your mech cannot take its standard move, reactions, or free actions of any kind, including protocols, and during your next turn, you can only take 1 quick action. On a Failure, your mech is immediately destroyed.",
+            "noStructure": "Your mech is destroyed. You may still exit it as normal.",
+            "crushingHit": "Become <strong>Stunned</strong> until the end of your next turn and roll for <strong>System Trauma</strong>.",
             "directHit": {
-                "base": "<strong>3+ STRUCTURE</strong>: Your mech is <strong>IMPAIRED</strong> and <strong>SLOWED</strong> until the end of your next turn.",
-                "one":"<strong>1 STRUCTURE</strong>: You take the <strong>SYSTEM TRAUMA</strong> result from this table and must roll a <strong>HULL</strong> check. On a success, your mech is <strong>IMPAIRED</strong> and <strong>SLOWED</strong> until the end of your next turn. On a Failure, Your mech is <strong>STUNNED</strong> until the end of your next turn. If there are no valid weapons or systems remaining, this result becomes a <strong>CRUSHING HIT</strong> instead.",
-                "two":"<strong>2 STRUCTURE</strong>: Roll a <strong>HULL</strong> check. On a success, your mech is <strong>IMPAIRED</strong> and <strong>SLOWED</strong> until the end of your next turn. On a failure, you take the <strong>SYSTEM TRAUMA</strong> result from this table, and your mech is <strong>IMPAIRED</strong> and <strong>IMMOBILIZED</strong> until the end of your next turn. If there are no valid systems or weapons remaining, this result becomes a <strong>CRUSHING HIT</strong> instead."
+                "base": "<strong>3+ STRUCTURE</strong>: Become <strong>Jammed</strong> until the end of your next turn.",
+                "one":"<strong>1 STRUCTURE</strong>: Become <strong>Stunned</strong> until the end of your next turn and roll for <strong>System Trauma</strong>.",
+                "two":"<strong>2 STRUCTURE</strong>: Make a <strong>Hull</strong> check. On success, become <strong>Jammed</strong> until the end of your next turn. On failure, become <strong>Stunned</strong> until the end of your next turn and roll for <strong>System Trauma</strong>."
             },
-            "systemTrauma":"Parts of your mech are torn off by the damage. Roll 1d6. On a 1–3, all weapons on one mount of your choice are destroyed; on a 4–6, a system of your choice is destroyed. LIMITED systems and weapons that are out of charges are not valid choices. If there are no valid choices remaining, it becomes the other result. If there are no valid systems or weapons remaining, this result becomes a <strong>DIRECT HIT</strong> instead.",
-            "glancingBlow":"Emergency systems kick in and stabilize your mech, but it’s <strong>IMPAIRED</strong> until the end of your next turn."
+            "systemTrauma":"Roll 1d6. On 1–3, all weapons on one mount of your choice are destroyed; on 4–6, a system of your choice is destroyed. <strong>Limited</strong> systems/weapons that are out of charges are not valid choices. If there are no valid choices, it becomes the other result. If there are still no valid choices, this result becomes <strong>DIRECT HIT</strong> instead.",
+            "glancingBlow":"Become <strong>Impaired</strong> until the end of your next turn."
         },
         "StructureTitles": {
             "noStructure": "Destroyed",
@@ -20,15 +20,15 @@
         },
         "StressDescriptions":{
             
-            "noStress": "The reactor goes critical – your mech suffers a reactor meltdown at the end of your next turn.",
-            "criticalFail": "Your Mech is <strong>EXPOSED</strong>, deals half damage, heat, and burn on attacks, and suffers a reactor meltdown at the end of your next turn. You can end this effect by stabilizing, or by passing an <strong>ENGINEERING</strong> check as a quick action.",
+            "noStress": "You suffer a reactor meltdown at the end of your next turn. When it happens, you may choose to eject your core instead: target a space within <strong>Range 3</strong>; the core is ejected to that space, where it melts down in a <strong>Blast 2</strong> explosion that deals <strong>4d6 Explosive damage</strong> or half on a successful <strong>Agility</strong> save.",
+            "criticalFail": "You suffer a reactor meltdown at the end of your next turn. When it happens, you may choose to eject your core instead: target a space within <strong>Range 3</strong>; the core is ejected to that space, where it melts down in a <strong>Blast 2</strong> explosion that deals <strong>4d6 Explosive damage</strong> or half on a successful <strong>Agility</strong> save.",
             "meltdown": {
-                "base": "<strong>3+ STRESS</strong>: Roll an <strong>ENGINEERING</strong> check. On a success, your mech is <strong>SLOWED</strong> and Deals half damage, heat, and burn on attacks until the end of your next turn. On a failure, your mech becomes <strong>EXPOSED</strong>.",
-                "one": "<strong>1 STRESS</strong>: Your mech is <strong>EXPOSED</strong>, and you must pass an <strong>ENGINEERING</strong> check. On a success, It deals half damage, heat and burn until the end of your next turn. On a failure, your mech suffers a reactor meltdown after 1d3 of your turns. This effect can be ended by stabilizing, or by passing an <strong>ENGINEERING</strong> check as a quick action.",
-                "two": "<strong>2 STRESS</strong>: Your mech must roll an <strong>ENGINEERING</strong> check. On a success, it is <strong>SLOWED</strong> and deals half damage, heat, and Burn on attacks until the end of your next turn. On a failure, it is <strong>EXPOSED</strong> and suffers a reactor meltdown after 1d3 of your turns (rolled by the GM). This effect can be ended by stabilizing, or by making a successful <strong>ENGINEERING</strong> check as a quick action."
+                "base": "<strong>3+ STRESS</strong>: Become <strong>Exposed</strong>.",
+                "one": "<strong>1 STRESS</strong>: You suffer a reactor meltdown at the end of your next turn. When it happens, you may choose to eject your core instead: target a space within <strong>Range 3</strong>; the core is ejected to that space, where it melts down in a <strong>Blast 2</strong> explosion that deals <strong>4d6 Explosive damage</strong> or half on a successful <strong>Agility</strong> save.",
+                "two": "<strong>2 STRESS</strong>: Make an <strong>Engineering</strong> check. On success, become <strong>Exposed</strong>. On failure, you suffer a reactor meltdown after <strong>1d6 of your turns</strong>. Starting on your next turn, you may retry the <strong>Engineering</strong> check as a free action. On success, the meltdown is prevented. If the meltdown happens, you may choose to eject your core instead: target a space within <strong>Range 3</strong>; the core is ejected to that space, where it melts down in a <strong>Blast 2</strong> explosion that deals <strong>4d6 Explosive damage</strong> or half on a successful <strong>Agility</strong> save."
             },
-            "powerFail": "Your mech suffers catastrophic disruption to power regulation as it tries to divert energy to critical safety systems. Your mech is <strong>SLOWED</strong> and Deals Half damage, heat, and burn on attacks until the end of your next turn.",
-            "emergencyShunt": "Your mech’s cooling systems manage to contain the increasing heat; however, your mech becomes <strong>IMPAIRED</strong> until the end of your next turn."
+            "powerFail": "Become <strong>Exposed</strong>.",
+            "emergencyShunt": "Become <strong>Impaired</strong> until the end of your next turn."
         },        
         "StressTitles": {
             "noStress": "Overheat",
