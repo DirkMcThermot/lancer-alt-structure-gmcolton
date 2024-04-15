@@ -2,9 +2,9 @@
   "id": "lancer-alt-structure-gmcolton",
   "title": "Lancer Alternative Structure - GM Colton",
   "description": "Implements an alternative structure rulesets for Lancer used by GM Colton",
-  "version": "#{VERSION}#",
+  "version": "1.0.0",
   "library": "false",
-  "manifestPlusVersion": "1.2.0",
+  "manifestPlusVersion": "1.0.0",
   "compatibility": {
     "minimum": 10,
     "verified": 10
@@ -45,7 +45,7 @@
       "path": "languages/en.json"
     }
   ],
-  "url": "#{URL}#",
+  "url": "https://github.com/DirkMcThermot/lancer-alt-structure-gmcolton.git",
   "manifest": "#{MANIFEST}#",
   "download": "#{DOWNLOAD}#",
   "license": "LICENSE",
